@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+   <main class="outer__background">
+        <section class="grid__section">
+
+        <!-- box-1 -->
+            <div class="box-1">
+                <img class="box-1__img" src="./Digital-clock-img/clock_logo.png" alt="">
+            </div>
+
+            <!-- box-2 -->
+            <div class="box-2">
+                <div class="timer__div">
+                    <div id="time" class="clock__box">Time</div>
+                    <div id="hrs" class="clock__box"></div> <span> <br>:</span>
+                    <div id="min" class="clock__box"></div> <span> <br>:</span>
+                    <div id="sec" class="clock__box"></div> <span> <br>:</span>
+                    <div id="am" class="clock__box">Am</div>
+                </div>
+            </div>
+
+
+
+            <!-- box-3 -->
+            <div class="box-3">
+
+                <!-- wake-up-alaram -->
+                <div id="wake-up" class="alarm-box">
+                    <img class="sun__img" src="./Digital-clock-img/wake_up.svg" alt="wake up img">
+                    <span> Set wake up time</span>
+                    <select name="select-time" id="time">
+                        <option value="7am-8am">7 Am - 8 Am</option>
+                        <option value="8am-9am">8 Am - 9 Am</option>
+                        <option value="9am-10am">9 Am - 10 Am</option>
+                        <option value="10am-11am">10 Am - 11 Am</option>
+                        <option value="11am-12am">11 Am - 12 Pm</option>
+                    </select>
+                </div>
+
+
+                <!-- lunch-alarm -->
+                <div id="lunch" class="alarm-box">
+                    <img class="lunch__img" src="./Digital-clock-img/lunch_time.svg" alt="lunch-time">
+                    <span>Set Lunch Time</span>
+                    <select id="select-lunch" name="select-time" id="time">
+                        <option value="12pm-1pm">12 PM - 1 PM</option>
+                        <option value="1pm-2pm">1 PM -2 Pm</option>
+                        <option value="2pm-3pm">2 PM - 3 PM</option>
+                        <option value="3pm-4pm">3 PM - 4 PM</option>
+                    </select>
+                </div>
+
+
+                <!-- Nap Time -->
+                <div class="alarm-box">
+                    <img src="./Digital-clock-img/nap_time.svg" alt="nap-time">
+                    <span>Set Nap Time</span>
+                    <select 
+                    id="select-nap" name="select-time" id="time">
+                        <option value="12pm-1pm">4 PM - 5 PM</option>
+                        <option value="1pm-2pm">5 PM - 6 Pm</option>
+                    </select>
+                </div>
+
+                <!-- Night-Time -->
+                <div class="alarm-box">
+                    <img src="./Digital-clock-img/undraw_sleep_analysis_o-5-f9.svg" alt="sleep-time">
+                    <span>Set Night Time</span>
+                    <select id="select-night" name="select-time" id="time">
+                        <option value="12pm-1pm">10 PM - 4 AM</option>
+                        <option value="1pm-2pm">11 PM - 5 AM</option>
+                        <option value="2pm-3pm">12 PM - 6 AM</option>
+                        <option value="3pm-4pm">1 AM - 7 AM</option>
+                    </select>
+                </div>
+            </div>
+
+   
+
+            <!-- box-4 -->
+            <div class="box-4">
+                <h2>Good Afternoon !! Take Some Rest</h2>
+            </div>
+            
+            <!-- box-5 -->
+            <div class="box-5"></div>
+
+            <!-- box-6 -->
+            <div class="box-6"></div>
+
+            <!-- box-7 -->
+            <div class="box-7"></div>
+
+            <!-- box-8 -->
+            <div class="box-8"></div>
+
+
+        </section>
+   </main>
+   <script src="./index.js"></script>
+</body>
+</html>
