@@ -23,7 +23,7 @@
                     <div id="hrs" class="clock__box"></div> <span> <br>:</span>
                     <div id="min" class="clock__box"></div> <span> <br>:</span>
                     <div id="sec" class="clock__box"></div> <span> <br>:</span>
-                    <div id="am" class="clock__box">Am</div>
+                    <div id="am" class="clock__box"></div>
                 </div>
             </div>
 
@@ -36,12 +36,24 @@
                 <div id="wake-up" class="alarm-box">
                     <img class="sun__img" src="./Digital-clock-img/wake_up.svg" alt="wake up img">
                     <span> Set wake up time</span>
-                    <select name="select-time" id="time">
-                        <option value="7am-8am">7 Am - 8 Am</option>
-                        <option value="8am-9am">8 Am - 9 Am</option>
-                        <option value="9am-10am">9 Am - 10 Am</option>
-                        <option value="10am-11am">10 Am - 11 Am</option>
-                        <option value="11am-12am">11 Am - 12 Pm</option>
+                    <select id="select-wake" name="select-wake" >
+                        <option value="7am-8am">07 AM - 08 AM</option>
+                        <option value="8am-9am">08 AM - 09 AM</option>
+                        <option value="9am-10am">09 AM - 10 AM</option>
+                        <option value="10am-11am">10 AM - 11 AM</option>
+                        <option value="11am-12pm">11 AM - 12 PM</option>
+                        <option value="12pm-01pm">12 PM - 01 PM</option>
+                        <option value="01pm-02pm">01 PM - 02 PM</option>
+                        <option value="02pm-03pm">02 PM - 03 PM</option>
+                        <option value="03pm-04pm">03 PM - 04 PM</option>
+                        <option value="04pm-05pm">04 PM - 05 PM</option>
+                        <option value="05pm-06pm">05 PM - 06 PM</option>
+                        <option value="06pm-07pm">06 PM - 07 PM</option>
+                        <option value="07pm-08pm">07 PM - 08 PM</option>
+                        <option value="08pm-09pm">08 PM - 09 PM</option>
+                        <option value="09pm-10pm">09 PM - 10 PM</option>
+                        <option value="10pm-11pm">10 PM - 11 PM</option>
+                        <option value="11pm-12am">11 PM - 12 AM</option>
                     </select>
                 </div>
 
@@ -65,20 +77,20 @@
                     <span>Set Nap Time</span>
                     <select 
                     id="select-nap" name="select-time" id="time">
-                        <option value="12pm-1pm">4 PM - 5 PM</option>
-                        <option value="1pm-2pm">5 PM - 6 Pm</option>
+                        <option value="4pm-5pm">4 PM - 5 PM</option>
+                        <option value="5pm-6pm">5 PM - 6 Pm</option>
                     </select>
                 </div>
 
                 <!-- Night-Time -->
                 <div class="alarm-box">
-                    <img src="./Digital-clock-img/undraw_sleep_analysis_o-5-f9.svg" alt="sleep-time">
+                    <img src="https://i.pinimg.com/564x/1c/22/43/1c22433b8d3aec799fd8187ca3030193.jpg" alt="sleep-time">
                     <span>Set Night Time</span>
                     <select id="select-night" name="select-time" id="time">
-                        <option value="12pm-1pm">10 PM - 4 AM</option>
-                        <option value="1pm-2pm">11 PM - 5 AM</option>
-                        <option value="2pm-3pm">12 PM - 6 AM</option>
-                        <option value="3pm-4pm">1 AM - 7 AM</option>
+                        <option value="10pm-5am">10 PM - 4 AM</option>
+                        <option value="11pm-5am">11 PM - 5 AM</option>
+                        <option value="12pm-6am">12 PM - 6 AM</option>
+                        <option value="1am-7am">1 AM - 7 AM</option>
                     </select>
                 </div>
             </div>
@@ -87,20 +99,31 @@
 
             <!-- box-4 -->
             <div class="box-4">
-                <h2>Good Afternoon !! Take Some Rest</h2>
+                <h2 id="box-4-h2"></h2>
             </div>
             
             <!-- box-5 -->
-            <div class="box-5"></div>
+            <div class="box-5">
+                <button id="btn" class="set__alarm">Set Alarm</button>
+            </div>
 
             <!-- box-6 -->
-            <div class="box-6"></div>
+            <div class="box-6">
+                <h2 id="box-6-h2"></h2>
+            </div>
 
             <!-- box-7 -->
-            <div class="box-7"></div>
+            <div class="box-7">
+                <img id="box-7-img" src="./Digital-clock-img/undraw_relaxing_at_home_re_mror.svg" alt="">
+            </div>
 
             <!-- box-8 -->
-            <div class="box-8"></div>
+            <div class="box-8">
+                <span id="box-8-span-1"></span>
+                <span id="box-8-span-2"></span>
+                <span id="box-8-span-3"></span>
+                <span id="box-8-span-4"></span>
+            </div>
 
 
         </section>
