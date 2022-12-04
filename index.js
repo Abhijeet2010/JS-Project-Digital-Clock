@@ -31,6 +31,7 @@ const timeGrettings =()=>{
     let hrs = getData.getHours()
     let dummyText = document.querySelector("#box-6-h2")
     let greetTexts = document.querySelector("#box-4-h2")
+    let changeImg = document.getElementById('box-7-img')
 
     // box-greets and gave quotes
     if(hrs<12){
@@ -50,6 +51,7 @@ const timeGrettings =()=>{
     // box-4-greets
     if(hrs<10){
         greetTexts.innerHTML = "Very Goood Morning ⛅🤗"
+        
     }else if(hrs >=12 && hrs <=15 ){
         greetTexts.innerHTML = "Good Afternoon Bro🌞😄"; 
     }else if(hrs>=16 && hrs<=18){
@@ -59,6 +61,7 @@ const timeGrettings =()=>{
     }else{
         greetTexts.innerHTML = "Dont watch Mobile😡Take Some Rest😴"
         }
+
 }
 setInterval(timeGrettings, 1000)
 
@@ -91,20 +94,9 @@ document.getElementById('btn').addEventListener('click',()=>{
     lunchTime.innerHTML = `Lunch Time is : ${lunch} <br/>`
     napTime.innerHTML = `Nap Time is : ${nap} <br/>`
     nightTime.innerHTML = `Night Time is : ${night} <br/>`
+
     // selecting img tag for changing image click on button
     let changeImg = document.getElementById('box-7-img')
-
-        if((hrs>6 && hrs<=10) && (wake=="7am-8am" || wake=="8am-9am" || wake=="9am-10am") ){
-            
-        }
-    else if((hrs>12 && hrs<15) && (wake=="12pm-01pm" || wake=="01pm-02pm" || wake=="02pm-03pm")){
-        console.log("good Afternoon")
-        changeImg.src = "https://previews.123rf.com/images/annrami/annrami1502/annrami150200008/36627228-pink-text-good-afternoon-on-the-hanging-isolate-on-white-background-vector-.jpg"
-        changeImg.setAttribute("height", "300rem")
-    }
-    
-        
-
 });
 
 
