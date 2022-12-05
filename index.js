@@ -1,6 +1,4 @@
 
-
-
 // Digital Clock
 const showTime =()=>{
     let data = new Date()
@@ -36,22 +34,31 @@ const timeGrettings =()=>{
     // box-greets and gave quotes
     if(hrs<12){
         dummyText.innerHTML = "Wake Up bro 😊 Get Some Break Fast🥣"
+        changeImg.src = "./Digital-clock-img/wakeup-morning.svg"
+        changeImg.setAttribute("height", "100%")
     }else if(hrs >=12 && hrs <=15 ){
         dummyText.innerHTML = "Its Lunch Time🍱"; 
+        changeImg.src = "./Digital-clock-img/lunch-to.svg"
+        changeImg.setAttribute("height", "100%")
     }else if(hrs>=16 && hrs<=18){
-        dummyText.innerHTML = "Take A Small Nap🥱Refresh Yourself😇";
+        dummyText.innerHTML = "Take A Small Nap🥱Refresh Yourself😇"; 
+        changeImg.src = "./Digital-clock-img/nap-break.svg"
+        changeImg.setAttribute("height", "100%")  
     }else if(hrs>=20 && hrs<=22){
         dummyText.innerHTML = "Get Some Dinner🥗🍜"
+        changeImg.src = "./Digital-clock-img/dinner-time.svg"
+        changeImg.setAttribute("height", "100%") 
+
     }else if (hrs>=23 && hrs<=24){
         dummyText.innerHTML = "Go to Sweet Sleep😴🥱"
+        changeImg.src = "./Digital-clock-img/good-night.svg"
+        changeImg.setAttribute("height", "100%")
     }else{
         dummyText.innerHTML = "Next Lovely Day is Waiting For you😉🤩"
     }
-
     // box-4-greets
-    if(hrs<10){
-        greetTexts.innerHTML = "Very Goood Morning ⛅🤗"
-        
+    if(hrs<12  ){
+        greetTexts.innerHTML = "Very Goood Morning ⛅🤗"       
     }else if(hrs >=12 && hrs <=15 ){
         greetTexts.innerHTML = "Good Afternoon Bro🌞😄"; 
     }else if(hrs>=16 && hrs<=18){
@@ -97,6 +104,7 @@ document.getElementById('btn').addEventListener('click',()=>{
 
     // selecting img tag for changing image click on button
     let changeImg = document.getElementById('box-7-img')
+
 });
 
 
