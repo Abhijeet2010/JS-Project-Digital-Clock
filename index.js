@@ -108,11 +108,12 @@ document.getElementById('btn').addEventListener('click',()=>{
 
 
 
-    if(wake=="7am" && hrs==8){
+    if(wake=="7am" && hrs==7){
         dummyText.innerHTML = "Wake Up bro 😊 Get Some Break Fast🥣"
         changeImg.src = "./Digital-clock-img/wakeup-morning.svg"
         changeImg.setAttribute("height", "100%")
         console.log("7am bro wake up")
+        
     }else if(wake=="8am" && hrs==8){
         dummyText.innerHTML = "Wake Up bro 😊 Get Some Break Fast🥣"
         changeImg.src = "./Digital-clock-img/wakeup-morning.svg"
@@ -222,7 +223,7 @@ document.getElementById('btn').addEventListener('click',()=>{
 
     // Lunch time
 
-    if(lunch=="7am" && hrs==8){
+    if(lunch=="7am" && hrs==7){
         dummyText.innerHTML = "Its Lunch Time🍱"
         changeImg.src = "./Digital-clock-img/lunch-to.svg"
         changeImg.setAttribute("height", "100%")
@@ -264,7 +265,7 @@ document.getElementById('btn').addEventListener('click',()=>{
         
     }else if(lunch=="2pm" && hrs==14){
         dummyText.innerHTML = "Its Lunch Time🍱"
-        changeImg.src  = "./Digital-clock-img/lunch-to.svg"
+        changeImg.src = "./Digital-clock-img/lunch-to.svg"
         changeImg.setAttribute("height", "100%")
         console.log("2pm bro wake up")
         
@@ -450,7 +451,7 @@ document.getElementById('btn').addEventListener('click',()=>{
 
 
     // Night Time
-    if(night=="7am" && hrs==8){
+    if(night=="7am" && hrs==7){
         dummyText.innerHTML = "Go to Sweet Sleep😴🥱"
         changeImg.src=   changeImg.src = "./Digital-clock-img/good-night.svg"
         changeImg.setAttribute("height", "100%")
